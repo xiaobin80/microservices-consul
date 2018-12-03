@@ -1,0 +1,20 @@
+server:
+  port: 8886
+  
+spring:
+  application:
+    name: cfg-srv
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        tags:
+          - version=0.1
+          - author=xiaobin
+        instance-id: ${spring.application.name}-${spring.cloud.client.ip-address}:${random.value}
+    config:
+      server:
+        git:
+          uri: https://gitee.com/xiaobin80/spring-cloud-config-repo
+          search-paths: consul, dev, production
