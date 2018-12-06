@@ -16,8 +16,8 @@ mvn clean package -DskipTests
 
 ### run
 ```bash
-java -jar config-server-consul --spring.application.name=cfgserver1 --server.port=8886
-java -jar config-server-consul --spring.application.name=cfgserver2 --server.port=8887
+java -jar config-server-0.0.2-SNAPSHOT.jar --spring.application.name=cfgserver1 --server.port=8886
+java -jar config-server-0.0.2-SNAPSHOT.jar --spring.application.name=cfgserver2 --server.port=8887
 ```
 
 ## consul-server
