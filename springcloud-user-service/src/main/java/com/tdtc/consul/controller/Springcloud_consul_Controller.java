@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tdtc.consul.feign.UserDetailsImpl;
+import com.tdtc.consul.service.IUserDetails;
 
 import io.github.resilience4j.circuitbreaker.CircuitBreaker;
 import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;
@@ -17,7 +17,7 @@ import io.github.resilience4j.retry.Retry;
 @RestController
 public class Springcloud_consul_Controller {
 	@Autowired
-	UserDetailsImpl findAllClient;
+	IUserDetails findAllClient;
 	
 	// Create a custom configuration for a CircuitBreaker
 	CircuitBreakerConfig circuitBreakerConfig = CircuitBreakerConfig.custom()
