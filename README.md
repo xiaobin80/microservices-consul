@@ -21,8 +21,8 @@ java -jar config-server-0.0.2-SNAPSHOT.jar --spring.application.name=cfgserver2 
 ```
 
 ## consul-server
-Consul [V1.4.0](https://releases.hashicorp.com/consul/1.4.0/consul_1.4.0_linux_amd64.zip) is deployed on WSL for development.
-install see [(dev mode) install CONSUL on ubuntu](https://www.cnblogs.com/xiaobin-hlj80/p/9893651.html)
+Consul [V1.4.3](https://releases.hashicorp.com/consul/1.4.3/consul_1.4.3_linux_amd64.zip) is deployed on WSL for development.
+install see [(dev mode) install CONSUL on ubuntu](https://www.cnblogs.com/xiaobin-hlj80/p/10404368.html)
 
 ### run
 ```bash
