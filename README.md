@@ -21,13 +21,28 @@ java -jar config-server-0.0.2-SNAPSHOT.jar --spring.application.name=cfgserver2 
 ```
 
 ## consul-server
-Consul [V1.4.3](https://releases.hashicorp.com/consul/1.4.3/consul_1.4.3_linux_amd64.zip) is deployed on WSL for development.
+Consul [V1.5.1](https://releases.hashicorp.com/consul/1.5.1/consul_1.5.1_linux_amd64.zip) is deployed on WSL for development.
 install see [(dev mode) install CONSUL on ubuntu](https://www.cnblogs.com/xiaobin-hlj80/p/10404368.html)
 
 ### run
 ```bash
 consul agent -dev -bind yourIP
 ```
+
+## jaeger-server
+Jaeger [V1.12](https://github.com/jaegertracing/jaeger/releases/download/v1.12.0/jaeger-1.12.0-linux-amd64.tar.gz)
+
+### run
+```bash
+~/jaeger-1.12.0-linux-amd64/jaeger-all-in-one
+```
+
+## redis-server
+```bash
+redis-server
+```
+
+open http://localhost:16686/ to access the Jaeger UI.
 
 ## launch
 

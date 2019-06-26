@@ -5,7 +5,7 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>userdetails</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>springcloud-userdetails</name>
@@ -19,7 +19,6 @@
 	</parent>
 
 	<properties>
-	    <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
@@ -70,20 +69,6 @@
             <artifactId>javax.servlet-api</artifactId>
             <scope>provided</scope>
         </dependency>
-        
-        <!-- https://mvnrepository.com/artifact/io.opentracing/opentracing-util -->
-		<dependency>
-		    <groupId>io.opentracing</groupId>
-		    <artifactId>opentracing-util</artifactId>
-		    <version>0.33.0</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/io.jaegertracing/jaeger-client -->
-		<dependency>
-		    <groupId>io.jaegertracing</groupId>
-		    <artifactId>jaeger-client</artifactId>
-		    <version>0.35.5</version>
-		</dependency>
 
 		<dependency>
             <groupId>io.opentracing.contrib</groupId>
