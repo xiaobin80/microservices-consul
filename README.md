@@ -11,17 +11,8 @@ This repo contains four projects: config server, spring cloud gateway, user serv
 mvn clean package -DskipTests
 ```
 
-## config-server
-* git repo [spring-cloud-config-repo](https://gitee.com/xiaobin80/spring-cloud-config-repo)
-
-### run
-```bash
-java -jar config-server-0.0.2-SNAPSHOT.jar --spring.application.name=cfgserver1 --server.port=8886
-java -jar config-server-0.0.2-SNAPSHOT.jar --spring.application.name=cfgserver2 --server.port=8887
-```
-
 ## consul-server
-Consul [V1.5.1](https://releases.hashicorp.com/consul/1.5.1/consul_1.5.1_linux_amd64.zip) is deployed on WSL for development.
+Consul [V1.6.2](wget https://releases.hashicorp.com/consul/1.6.2/consul_1.6.2_linux_amd64.zip) is deployed on WSL for development.
 install see [(dev mode) install CONSUL on ubuntu](https://www.cnblogs.com/xiaobin-hlj80/p/10404368.html)
 
 ### run
@@ -30,11 +21,11 @@ consul agent -dev -bind yourIP
 ```
 
 ## jaeger-server
-Jaeger [V1.12](https://github.com/jaegertracing/jaeger/releases/download/v1.12.0/jaeger-1.12.0-linux-amd64.tar.gz)
+Jaeger [V1.16](https://github.com/jaegertracing/jaeger/releases/download/v1.16.0/jaeger-1.16.0-linux-amd64.tar.gz)
 
 ### run
 ```bash
-~/jaeger-1.12.0-linux-amd64/jaeger-all-in-one
+~/jaeger-1.16.0-linux-amd64/jaeger-all-in-one
 ```
 
 ## redis-server
@@ -43,6 +34,15 @@ redis-server
 ```
 
 open http://localhost:16686/ to access the Jaeger UI.
+
+## config-server
+* git repo [spring-cloud-config-repo](https://gitee.com/xiaobin80/spring-cloud-config-repo)
+
+### run
+```bash
+java -jar config-server-0.0.3-SNAPSHOT.jar --spring.application.name=cfgserver1 --server.port=8886
+java -jar config-server-0.0.3-SNAPSHOT.jar --spring.application.name=cfgserver2 --server.port=8887
+```
 
 ## launch
 
