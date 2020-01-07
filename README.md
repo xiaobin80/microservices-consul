@@ -12,12 +12,17 @@ mvn clean package -DskipTests
 ```
 
 ## consul-server
-Consul [V1.6.2](wget https://releases.hashicorp.com/consul/1.6.2/consul_1.6.2_linux_amd64.zip) is deployed on WSL for development.
+Consul [V1.6.2](https://releases.hashicorp.com/consul/1.6.2/consul_1.6.2_linux_amd64.zip) is deployed on WSL for development.
 install see [(dev mode) install CONSUL on ubuntu](https://www.cnblogs.com/xiaobin-hlj80/p/10404368.html)
 
 ### run
 ```bash
 consul agent -dev -bind yourIP
+```
+
+## redis-server
+```bash
+redis-server
 ```
 
 ## jaeger-server
@@ -26,11 +31,6 @@ Jaeger [V1.16](https://github.com/jaegertracing/jaeger/releases/download/v1.16.0
 ### run
 ```bash
 ~/jaeger-1.16.0-linux-amd64/jaeger-all-in-one
-```
-
-## redis-server
-```bash
-redis-server
 ```
 
 open http://localhost:16686/ to access the Jaeger UI.
