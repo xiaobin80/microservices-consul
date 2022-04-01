@@ -17,4 +17,5 @@ spring:
       server:
         git:
           uri: https://gitee.com/xiaobin80/spring-cloud-config-repo
+          default-label: master
           search-paths: consul, dev, production
