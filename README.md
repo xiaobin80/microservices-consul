@@ -12,7 +12,7 @@ mvn clean package -DskipTests
 ```
 
 ## consul-server
-Consul [v1.11.4](https://releases.hashicorp.com/consul/1.11.4/consul_1.11.4_linux_amd64.zip) is deployed on WSL for development.
+Consul [v1.12.1](https://releases.hashicorp.com/consul/1.12.1/consul_1.12.1_linux_amd64.zip) is deployed on WSL for development.
 install see [(dev mode) install CONSUL on ubuntu](https://tdtc-hrb.github.io/cnblogs/post/install-consul_ubuntu/)
 
 ### run
@@ -26,11 +26,11 @@ redis-server
 ```
 
 ## jaeger-server
-Jaeger [v1.32](https://github.com/jaegertracing/jaeger/releases/download/v1.32.0/jaeger-1.32.0-linux-amd64.tar.gz)
+Jaeger [v1.35](https://github.com/jaegertracing/jaeger/releases/download/v1.35.1/jaeger-1.35.1-linux-amd64.tar.gz)
 
 ### run
 ```bash
-~/jaeger-1.32.0-linux-amd64/jaeger-all-in-one
+~/jaeger-1.35.1-linux-amd64/jaeger-all-in-one
 ```
 
 open http://localhost:16686/ to access the Jaeger UI.
@@ -40,8 +40,8 @@ open http://localhost:16686/ to access the Jaeger UI.
 
 ### run
 ```bash
-java -jar config-server-0.0.4-SNAPSHOT.jar --spring.application.name=cfgserver1 --server.port=8886
-java -jar config-server-0.0.4-SNAPSHOT.jar --spring.application.name=cfgserver2 --server.port=8887
+java -jar config-server-0.1.0-SNAPSHOT.jar --spring.application.name=cfgserver1 --server.port=8886
+java -jar config-server-0.1.0-SNAPSHOT.jar --spring.application.name=cfgserver2 --server.port=8887
 ```
 
 ## launch
