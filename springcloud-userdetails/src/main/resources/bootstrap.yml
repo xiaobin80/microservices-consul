@@ -1,8 +1,0 @@
-spring:
-  application:
-    name: userdetails
-  cloud:
-    config:
-      discovery: 
-        enabled: true
-      uri: http://localhost:8886,http://localhost:8887
